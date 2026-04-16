@@ -136,19 +136,19 @@
 
     function draw() {
         const gradient = ctx.createLinearGradient(0, 0, 0, height);
-        gradient.addColorStop(0, "#fff5ef");
-        gradient.addColorStop(1, "#ffd8ba");
+        gradient.addColorStop(0, "#646464");
+        gradient.addColorStop(1, "#d64549");
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, width, height);
 
-        ctx.fillStyle = "#fff1e7";
+        ctx.fillStyle = "#ff5b5f";
         roundRect(24, 20, width - 48, 82, 24);
         ctx.fill();
 
-        ctx.fillStyle = "#431b00";
+        ctx.fillStyle = "#ffffff";
         ctx.textAlign = "left";
         ctx.font = "bold 26px Arial";
-        ctx.fillText("UNO Digital", 44, 52);
+        ctx.fillText("UNO Mobilspil Demo", 44, 52);
 
         ctx.font = "18px Arial";
         ctx.fillText(statusText, 44, 80);
@@ -164,7 +164,7 @@
         drawUnoCard(pileX, topCardY, topCard, false);
         drawUnoCard(familyPileX, topCardY, { color: "green", value: 2 }, true);
 
-        ctx.fillStyle = "#431b00";
+        ctx.fillStyle = "#ffffff";
         ctx.fillText("Din h\u00E5nd", 44, 315);
 
         const handLayout = getHandLayout();
@@ -176,7 +176,7 @@
 
         if (!demoEnded && !waitingForReply) {
             ctx.font = "16px Arial";
-            ctx.fillStyle = "#6a3008";
+            ctx.fillStyle = "#ffffff";
             ctx.fillText("Kun kort med samme farve eller tal virker.", 44, 392);
         }
 

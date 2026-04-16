@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Case 2: Uno – family focus mode</title>
     <link rel="stylesheet" href="case2.css">
+    <link rel="stylesheet" href="style.css">
     <script src="case2.js" defer></script>
 </head>
 <body>
+
+<div class="container">
+    <header class="site-header">
+        <a href="index.html">
+            <img src="uno-logo.png" class="logo" alt="UNO logo"></a>
+        <button class="burger" type="button" aria-label="Åbn menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
+    </header>
+    <nav id="menu">
+        <a href="index.html">Startside</a>
+        <a href="spg.html">Ofte stillede spørgsmål</a>
+        <a href="case2.html">Prøv spillet</a>
+        <a href="regler.html">Regler</a>
+        <a href="historie.html">Historie</a>
+        <a href="omos.html">Om os</a>
+    </nav>
     <!--
         UNO er et velkendt kortspil, som mange familier allerede kender. Spillet relanceres nu som en digital version målrettet familier med børn.
 
@@ -15,6 +31,35 @@
 
         Som med den anden case - der skal være med til det end en landingpage hvor der er en knap med “Spil UNO – klik her”
     -->
+
+    <section class="hero hero-home">
+        <div class="hero-copy">
+            <h1 class="hero-title">
+                <img src="uno-logo.png" class="hero-title-logo" alt="UNO mobilspil" height="200">
+            </h1>
+            <p class="hero-intro">Her har du muglighed for at afprøve spillet, for og se om det er noget for din familie</p>
+        </div>
+    </section>
+
     <canvas id="case2-demo-canvas" width="620" height="420" aria-label="UNO Digital"></canvas>
+
+
+
+    <footer id="download">
+        <h3>Find os</h3>
+        <p>Multimediedesign 1. semester</p>
+        <p>Adresse: Lyngvej 21, 4600 Køge</p>
+        <p>Email: xxx@edu.dk</p>
+
+        <div class="buttons">
+            <img src="appstore.png" alt="Appstore">
+            <img src="googleplay.png" alt="GooglePlay">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</div>
 </body>
 </html>
+

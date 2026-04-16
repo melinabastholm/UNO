@@ -1,10 +1,12 @@
 #case2-demo-canvas {
     display: block;
     width: min(100%, 620px);
+    margin: 40px auto;
     height: auto;
     border: 0;
     border-radius: 24px;
     background: linear-gradient(180deg, #fff5ef 0%, #ffd8ba 100%);
     box-shadow: 0 18px 40px rgba(83, 25, 0, 0.18);
     cursor: pointer;
+
 }
