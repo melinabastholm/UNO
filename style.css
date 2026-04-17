@@ -10,9 +10,10 @@ html {
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, sans-serif;
     background: #434343;
     color: #ffffff;
+    font-weight: bold;
 }
 
 h1,
@@ -151,12 +152,18 @@ h3 {
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+
 }
 
 .buttons img {
     width: 140px;
     height: auto;
     display: block;
+    transition: transform 0.2s ease-out;
+}
+
+.buttons img:hover {
+    transform: scale(1.1);
 }
 
 .buttons img[src="googleplay.png"] {
@@ -462,6 +469,7 @@ footer .buttons {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .faq-answer {
@@ -471,6 +479,7 @@ footer .buttons {
     border-radius: 8px;
     margin-top: 5px;
     color: #101010;
+    font-weight: normal;
 }
 
 
