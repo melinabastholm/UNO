@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UNO hjemmeside</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="frontpage">
-<div class="container">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNO hjemmeside</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body class="frontpage">
+    <div class="container">
 
-<header class="site-header">
-  <a href="index.html">
-    <img src="uno-logo.png" class="logo" alt="UNO's brandlogo"></a>
-  <button class="burger" type="button" aria-label="Åbn menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
-</header>
-
-
-<nav id="menu">
-  <a href="index.html">Startside</a>
-  <a href="spg.html">Ofte stillede spørgsmål</a>
-  <a href="case2.html">Prøv spillet</a>
-  <a href="regler.html">Regler</a>
-  <a href="historie.html">Historie</a>
-  <a href="omos.html">Om os</a>
-</nav>
+      <header class="site-header">
+        <a href="index.html">
+          <img src="uno-logo.png" class="logo" alt="UNO's brandlogo"></a>
+        <button class="burger" type="button" aria-label="Åbn menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
+      </header>
 
 
-<main>
-  <section class="hero hero-home">
-    <div class="hero-copy">
-      <h1 class="hero-title">
-        <img src="uno-logo.png" class="hero-title-logo" alt="UNO's brandlogo som overskrift'">
-      </h1>
-      <p class="hero-intro">UNO som mobilspil giver dit barn sjov og underholdning, både alene og sammen med andre.</p>
-      <p class="hero-text">Et farverigt og let spil, der passer perfekt til små pauser i hverdagen. En tryg og hyggelig spiloplevelse for hele familien.</p>
+      <nav id="menu">
+        <a href="index.html">Startside</a>
+        <a href="spg.html">Ofte stillede spørgsmål</a>
+        <a href="case2.html">Prøv spillet</a>
+        <a href="regler.html">Regler</a>
+        <a href="historie.html">Historie</a>
+        <a href="omos.html">Om os</a>
+      </nav>
+
+
+      <main>
+        <section class="hero hero-home">
+          <div class="hero-copy">
+            <h1 class="hero-title">
+              <img src="uno-logo.png" class="hero-title-logo" alt="UNO's brandlogo som overskrift'">
+            </h1>
+            <p class="hero-intro">UNO som mobilspil giver dit barn sjov og underholdning, både alene og sammen med andre.
+            </p>
+            <p class="hero-text">Et farverigt og let spil, der passer perfekt til små pauser i hverdagen. En tryg og
+              hyggelig spiloplevelse for hele familien.
+            </p>
+          </div>
+
+          <div class="hero-visual">
+            <img src="unokort.png" class="hero-cards" alt="Dekorativt billede af UNO kort i en vifte">
+          </div>
+
+          <div class="download-cta">
+            <h3>Download spillet nu</h3>
+            <div class="buttons">
+              <a href="https://www.apple.com/dk/app-store/">
+                <img src="appstore.png" alt="Download i App Store">
+              </a>
+              <a href="https://play.google.com/store/games?hl=da">
+                <img src="googleplay.png" alt="Download i GooglePlay">
+              </a>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="content story-section" id="story">
+          <h1>UNO – Sjov for hele familien</h1>
+          <p>
+            Oplev glæden ved UNO i en moderne og børnevenlig mobilversion, der er perfekt til både små pauser og hyggelige
+              stunder derhjemme. Spillet er nemt at gå til, farverigt og designet, så børn hurtigt kan være med – uden at
+              det bliver kedeligt for de voksne. Det intuitive design gør, at selv nye spillere hurtigt føler sig trygge og
+              klar til at spille.
+            Med mulighed for både at spille alene mod computeren eller sammen med andre online, kan dit barn have det sjovt,
+              uanset om I er på farten eller slapper af derhjemme. Spillet tilpasser sig forskellige spillestile og giver en
+              god balance mellem afslapning og spænding, så det altid føles underholdende.
+            Samtidig er det en tryg og enkel spiloplevelse, hvor fokus er på underholdning, læring og fælles spilleglæde. Et
+              oplagt valg for forældre, der ønsker et sjovt, sikkert og familievenligt spil, som både børn og voksne kan
+              samles om – igen og igen.
+          </p>
+          <div class="story-visual">
+            <img src="unokort.png" class="story-logo" alt="Dekorativt billede af UNO kort i en vifte">
+          </div>
+        </section>
+
+      </main>
+      <footer id="download">
+        <h3>Find os</h3>
+        <p>Multimediedesign 1. semester</p>
+        <p>Adresse: Lyngvej 21, 4600 Køge</p>
+        <p>Email: xxx@edu.dk</p>
+
+        <div class="buttons">
+          <a href="https://www.apple.com/dk/app-store/">
+           <img src="appstore.png" alt="Download i App Store">
+          </a>
+          <a href="https://play.google.com/store/games?hl=da">
+            <img src="googleplay.png" alt="Download i GooglePlay">
+          </a>
+        </div>
+      </footer>
     </div>
-
-    <div class="hero-visual">
-      <img src="unokort.png" class="hero-cards" alt="Dekorativt billede af UNO kort i en vifte">
-    </div>
-
-    <div class="download-cta">
-      <h3>Download spillet nu</h3>
-      <div class="buttons">
-        <a href="https://www.apple.com/dk/app-store/">
-          <img src="appstore.png" alt="Download i App Store"></a>
-        <a href="https://play.google.com/store/games?hl=da">
-          <img src="googleplay.png" alt="Download i GooglePlay"></a>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="content story-section" id="story">
-    <h1>UNO – Sjov for hele familien</h1>
-    <p>
-      Oplev glæden ved UNO i en moderne og børnevenlig mobilversion, der er perfekt til både små pauser og hyggelige stunder derhjemme. Spillet er nemt at gå til, farverigt og designet, så børn hurtigt kan være med – uden at det bliver kedeligt for de voksne. Det intuitive design gør, at selv nye spillere hurtigt føler sig trygge og klar til at spille.
-      Med mulighed for både at spille alene mod computeren eller sammen med andre online, kan dit barn have det sjovt, uanset om I er på farten eller slapper af derhjemme. Spillet tilpasser sig forskellige spillestile og giver en god balance mellem afslapning og spænding, så det altid føles underholdende.
-      Samtidig er det en tryg og enkel spiloplevelse, hvor fokus er på underholdning, læring og fælles spilleglæde. Et oplagt valg for forældre, der ønsker et sjovt, sikkert og familievenligt spil, som både børn og voksne kan samles om – igen og igen.
-    </p>
-    <div class="story-visual">
-      <img src="unokort.png" class="story-logo" alt="Dekorativt billede af UNO kort i en vifte">
-    </div>
-  </section>
-
-</main>
-
-
-
-<footer id="download">
-  <h3>Find os</h3>
-  <p>Multimediedesign 1. semester</p>
-  <p>Adresse: Lyngvej 21, 4600 Køge</p>
-  <p>Email: xxx@edu.dk</p>
-
-  <div class="buttons">
-    <a href="https://www.apple.com/dk/app-store/">
-    <img src="appstore.png" alt="Download i App Store"></a>
-    <a href="https://play.google.com/store/games?hl=da">
-    <img src="googleplay.png" alt="Download i GooglePlay"></a>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-</div>
-</body>
+  </body>
 </html>

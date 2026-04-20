@@ -1,79 +1,87 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNO hjemmeside</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="rules-page">
-<div class="container">
-    <header class="site-header">
-        <a href="index.html">
-            <img src="uno-logo.png" class="logo" alt="UNO's brandlogo"></a>
-        <button class="burger" type="button" aria-label="Åbn menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
-    </header>
-    <nav id="menu">
-        <a href="index.html">Startside</a>
-        <a href="spg.html">Ofte stillede spørgsmål</a>
-        <a href="case2.html">Prøv spillet</a>
-        <a href="regler.html">Regler</a>
-        <a href="historie.html">Historie</a>
-        <a href="omos.html">Om os</a>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UNO hjemmeside</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body class="rules-page">
+        <div class="container">
+                <header class="site-header">
+                    <a href="index.html">
+                        <img src="uno-logo.png" class="logo" alt="UNO's brandlogo"></a>
+                    <button class="burger" type="button" aria-label="Åbn menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
+                </header>
+                <nav id="menu">
+                    <a href="index.html">Startside</a>
+                    <a href="spg.html">Ofte stillede spørgsmål</a>
+                    <a href="case2.html">Prøv spillet</a>
+                    <a href="regler.html">Regler</a>
+                    <a href="historie.html">Historie</a>
+                    <a href="omos.html">Om os</a>
+                </nav>
 
-    <main class="rules-main">
-        <section class="rules-hero">
-            <h1 class="rules-title">Regler</h1>
-        </section>
+            <main class="rules-main">
+                <section class="rules-hero">
+                    <h1 class="rules-title">Regler</h1>
+                </section>
 
-        <section class="rules-content" aria-label="UNO regler">
-            <article class="rules-block">
-                <h2>Spillets formål</h2>
-                <p>Vær den første spiller til at komme af med alle dine kort.</p>
-            </article>
+                <section class="rules-content" aria-label="UNO regler">
+                    <article class="rules-block">
+                        <h2>Spillets formål</h2>
+                        <p>Vær den første spiller til at komme af med alle dine kort.</p>
+                    </article>
 
-            <article class="rules-block">
-                <h2>Korttyper - Uno består af 2 slags kort</h2>
-                <p>Tal-kort: Nummereret fra 0 til 9 i farverne rød, gul, grøn og blå.</p>
-                <p>Handlingskort:</p>
-                <ul class="rules-list">
-                    <li>Spring over: Næste spiller mister sin tur.</li>
-                    <li>Træk 2: Næste spiller skal trække to kort og mister sin tur.</li>
-                    <li>Træk 4 og skift farve: Spilleren vælger en ny farve, og næste spiller skal trække fire kort og mister sin tur.</li>
-                    <li>Skift farve: Spilleren kan vælge en ny farve.</li>
-                    <li>Skift retning: Spilleren ændrer spillets retning.</li>
-                </ul>
-            </article>
+                    <article class="rules-block">
+                        <h2>Korttyper - Uno består af 2 slags kort</h2>
+                        <p>Tal-kort: Nummereret fra 0 til 9 i farverne rød, gul, grøn og blå.</p>
+                        <p>Handlingskort:</p>
+                        <ul class="rules-list">
+                            <li>Spring over: Næste spiller mister sin tur.</li>
+                            <li>Træk 2: Næste spiller skal trække to kort og mister sin tur.</li>
+                            <li>Træk 4 og skift farve: Spilleren vælger en ny farve, og næste spiller skal trække fire kort
+                                og mister sin tur.</li>
+                            <li>Skift farve: Spilleren kan vælge en ny farve.</li>
+                            <li>Skift retning: Spilleren ændrer spillets retning.</li>
+                        </ul>
+                    </article>
 
-            <article class="rules-block">
-                <h2>Spillets gang</h2>
-                <p>Hver spiller får syv kort. Resten af kortene placeres i en bunke med forsiden nedad. Det øverste kort vendes og placeres ved siden af bunken som start på afkastbunken.</p>
-                <p>Spilleren til venstre for dealeren starter. Spilleren skal matche det øverste kort i afkastbunken enten efter farve eller tal. Hvis der i afkastbunken eksempelvis ligger en grøn 7'er, kan du altså vælge at lægge et andet grønt kort på eller en 7'er i anden farve.</p>
-                <p>Du må gerne lægge flere kort i afkastbunken under samme tur. Hvis spilleren ikke kan spille et kort, skal de trække et kort fra bunken. Hvis det trukne kort kan spilles, må spilleren spille det med det samme. Ellers går turen videre til næste spiller.</p>
-            </article>
+                    <article class="rules-block">
+                        <h2>Spillets gang</h2>
+                        <p>Hver spiller får syv kort. Resten af kortene placeres i en bunke med forsiden nedad. Det øverste
+                            kort vendes og placeres ved siden af bunken som start på afkastbunken.</p>
+                        <p>Spilleren til venstre for dealeren starter. Spilleren skal matche det øverste kort i afkastbunken
+                            enten efter farve eller tal. Hvis der i afkastbunken eksempelvis ligger en grøn 7'er, kan du
+                            altså vælge at lægge et andet grønt kort på eller en 7'er i anden farve.</p>
+                        <p>Du må gerne lægge flere kort i afkastbunken under samme tur. Hvis spilleren ikke kan spille et
+                            kort, skal de trække et kort fra bunken. Hvis det trukne kort kan spilles, må spilleren spille
+                            det med det samme. Ellers går turen videre til næste spiller.</p>
+                    </article>
 
-            <article class="rules-block">
-                <h2>Vinderen</h2>
-                <p>Spillet fortsætter, indtil en spiller ikke har flere kort tilbage. Denne spiller erklæres som vinderen. Hvis bunken løber tør for kort, blandes afkastbunken og placeres som ny trækbunke.</p>
-            </article>
-        </section>
-    </main>
-    <footer id="download">
-        <h3>Find os</h3>
-        <p>Multimediedesign 1. semester</p>
-        <p>Adresse: Lyngvej 21, 4600 Køge</p>
-        <p>Email: xxx@edu.dk</p>
+                    <article class="rules-block">
+                        <h2>Vinderen</h2>
+                        <p>Spillet fortsætter, indtil en spiller ikke har flere kort tilbage. Denne spiller erklæres som
+                            vinderen. Hvis bunken løber tør for kort, blandes afkastbunken og placeres som ny trækbunke.</p>
+                    </article>
+                </section>
+            </main>
+            <footer id="download">
+                <h3>Find os</h3>
+                <p>Multimediedesign 1. semester</p>
+                <p>Adresse: Lyngvej 21, 4600 Køge</p>
+                <p>Email: xxx@edu.dk</p>
 
-        <div class="buttons">
-            <a href="https://www.apple.com/dk/app-store/">
-                <img src="appstore.png" alt="Download i App Store"></a>
-            <a href="https://play.google.com/store/games?hl=da">
-                <img src="googleplay.png" alt="Download i GooglePlay"></a>
+                <div class="buttons">
+                    <a href="https://www.apple.com/dk/app-store/">
+                        <img src="appstore.png" alt="Download i App Store">
+                    </a>
+                    <a href="https://play.google.com/store/games?hl=da">
+                        <img src="googleplay.png" alt="Download i GooglePlay">
+                    </a>
+                </div>
+            </footer>
         </div>
-    </footer>
-
-    <script src="script.js"></script>
-</div>
-</body>
+    </body>
 </html>
